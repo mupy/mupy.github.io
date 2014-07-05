@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Mopie 動画地図">
+<meta name="keywords" content="Vieo, Map, Movie, Navigation">
+<meta name="author" content="Yuta Okazaki">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- SITE TITLE -->
+<title>Mopie - 動画地図</title>
+
+<!-- =========================
+      FAV AND TOUCH ICONS  
+============================== -->
+<link rel="icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- =========================
+     STYLESHEETS   
+============================== -->
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- FONT ICONS -->
+<link rel="stylesheet" href="assets/elegant-icons/style.css">
+<link rel="stylesheet" href="assets/app-icons/styles.css">
+<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
+
+<!-- WEB FONTS -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
+
+<!-- CAROUSEL AND LIGHTBOX -->
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+<!-- ANIMATIONS -->
+<link rel="stylesheet" href="css/animate.min.css">
+
+<!-- CUSTOM STYLESHEETS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- COLORS -->
+<link rel="stylesheet" href="css/colors/blue.css"> <!-- DEFAULT COLOR/ CURRENTLY USING -->
+<!-- <link rel="stylesheet" href="css/colors/red.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/green.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/purple.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/orange.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/blue-munsell.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/slate.css"> --> 
+<!-- <link rel="stylesheet" href="css/colors/yellow.css"> -->
+
+<!-- RESPONSIVE FIXES -->
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!-- =========================
+     PRE LOADER
+============================== -->
+<div class="preloader">
+  <div class="status">&nbsp;</div>
+</div>
+
+<!-- =========================
+     HEADER
+============================== -->
+<header class="header" data-stellar-background-ratio="0.5" id="home">
+
+<!-- COLOR OVER IMAGE -->
+<div class="color-overlay"> <!-- To make header full screen. Use .full-screen class with color overlay. Example: <div class="color-overlay full-screen">  -->
+
+	<!-- STICKY NAVIGATION -->
+	<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
+		<div class="container">
+			<div class="navbar-header">
+
+				<!-- LOGO ON STICKY NAV BAR -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#">Mopie</a>
+
+			</div>
+
+			<!-- NAVIGATION LINKS -->
+			<div class="navbar-collapse collapse" id="kane-navigation">
+				<ul class="nav navbar-nav navbar-right main-navigation">
+					<li><a href="#brief2">それでも道はややこしい。</a></li>
+					<li><a href="#brief1">街を楽しもう。</a></li>
+					<li><a href="#download">行きたい場所を伝える</a></li>
+				</ul>
+			</div>
+		</div> <!-- /END CONTAINER -->
+	</div> <!-- /END STICKY NAVIGATION -->
+	
+	
+	<!-- CONTAINER -->
+	<div class="container">
+		<!-- ONLY LOGO ON HEADER -->
+		<div class="only-logo">
+			<div class="navbar">
+				<div class="navbar-header">
+					<!-- <img src="images/logo.png" alt=""> -->
+				</div>
+			</div>
+		</div> <!-- /END ONLY LOGO ON HEADER -->
+		
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				
+				<!-- HEADING AND BUTTONS -->
+				<div class="intro-section">
+					
+					<!-- WELCOM MESSAGE -->
+					<h1 class="intro">Mopie</h1>
+					<h5>道に迷わず、街を楽しむための"動画地図"です。</h5>
+
+					<!-- BUTTON -->
+					<div class="buttons" id="download-button">
+
+						<a href="#brief2" class="btn btn-default btn-lg standard-button"><i class="icon-app-download"></i>説明を読む</a>
+
+					</div>
+					<!-- /END BUTTONS -->
+
+				</div>
+				<!-- /END HEADNING AND BUTTONS -->
+
+			</div>
+		</div>
+		<!-- /END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+</header>
+<!-- /END HEADER -->
+
+
+
+<!-- =========================
+     BRIEF RIGHT SECTION 
+============================== -->
+<section class="app-brief" id="brief2">
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-6 custom left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+      <h2 class="dark-text" style="font-size:2.125rem; margin-bottom:10px;">それでも、道はややこしい。</h2>
+
+      <div class="colored-line-left" style="margin-bottom:20px; width:350px;"></div>
+
+      <p style="line-height:40px;">
+        Googleマップ、スマートフォン。<br>昔に比べて、地図はとても便利になりました。<br>
+        しかしそんな今でも、道に迷うことはあります。<br>
+      </p>
+    </div>
+
+    <div class="col-md-6 wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+      <div class="phone-image">
+        <img style="border-radius:120px;" src="https://dl.dropboxusercontent.com/u/20967079/broadway.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-12 left-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+      <p style="margin-top:0;">
+        <span style="line-height:80px;">
+          「現在地が分からない..」 「進行方向が分からない..」 「道を一本間違えた！」<br>
+        </span>
+        そして今ここに、<strong>究極の地図</strong>があります。
+      </p>
+
+      <ul class="services feature-list" style="margin-top:20px; padding-top:20px; padding-bottom:0;">
+        <li class="single-service" style="padding-bottom:0;">
+          <h3><i class="icon_lock_alt"></i>
+            誰かが、あなたの代わりにお店まで歩きます。</h3>
+        </li>
+        <li class="single-service" style="padding-bottom:0;">
+          <h3><i class="icon_check_alt2"></i>
+            あなたはその人目線で、お店までの道のりを体験できます。</h3>
+        </li>
+        <li class="single-service" style="padding-bottom:0;">
+          <h3><i class="icon_paperclip"></i>
+            人が歩いたときの様子そのままだから、街の雰囲気が手に取るように分かります。</h3>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+<!-- =========================
+     BRIEF LEFT SECTION 
+============================== -->
+<section class="app-brief grey-bg" id="brief1">
+
+<div class="container">
+	
+	<div class="row">
+		
+		<!-- PHONES IMAGE -->
+		<!-- <div class="col&#45;md&#45;6 wow fadeInRight animated" data&#45;wow&#45;offset="10" data&#45;wow&#45;duration="1.5s"> -->
+		<!-- 	<div class="phone&#45;image"> -->
+		<!-- 		<img src="images/2&#45;iphone&#45;left.png" alt=""> -->
+		<!-- 	</div> -->
+		<!-- </div> -->
+		
+		<!-- RIGHT SIDE WITH BRIEF -->
+		<div class="col-md-12 center-align wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+			
+			<!-- SECTION TITLE -->
+      <h2 style="margin-bottom:0;" class="dark-text">街を<span style="font-size:60%;">、</span>楽しもう。</h2>
+			
+			<div class="colored-line" style="margin-bottom:20px; width:300px;"></div>
+			
+			<p>
+         一度も行ったことがない場所も、まるで散歩しているかのように味わえます。<br>
+         この機会に想像を広げて、あの憧れの街、憧れのお店を楽しみませんか？<br>
+       </p>
+
+       <h3 style="line-height:80px;">あなたが行ってみたいお店を教えてください。</h3>
+
+       <p style="line-height:35px;">
+         今どこに住んでいようと関係ありません。<br>
+         麻布の隠れ家パン屋さんから、渋谷の知る人ぞ知るバーまで。<br>
+         行ってみたいけど行けていない場所を 私に教えてください。<br>
+         <br>
+         あなたの「一度は行ってみたい場所」はどこですか？
+			</p>
+
+						
+		</div>
+		<!-- /END RIGHT BRIEF -->
+		
+	</div>
+	<!-- /END ROW -->
+	
+</div>
+<!-- /END CONTAINER -->
+
+</section>
+<!-- /END SECTION -->
+
+
+<!-- =========================
+     DOWNLOAD NOW 
+============================== -->
+<section class="download" id="download">
+
+<div class="color-overlay">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+
+				<div class="download-container">
+					<h2 class=" wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">私が行ってみたい場所</h2>
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s">
+            <input type="text" name="wanna-visit" id="subscriber-wanna-visit" placeholder="お店の名前/URLなど" class="form-control input-box">
+          </form>
+				</div>
+
+				<!-- SUBSCRIPTION FORM WITH TITLE -->
+				<div class="subscription-form-container">
+          <h4 class="wow fadeInLeft animated" data-wow-offset="10" data-wow-duration="1.5s">
+            あなたがリクエストしたお店までの道を、動画で配信します。<br>
+            配信のお知らせを受け取りたいメールアドレスを入力ください。
+          </h4>
+					<!-- =====================
+					     LOCAL TXT FORM STARTS 
+					     ===================== -->
+					<form class="subscription-form form-inline wow fadeInRight animated" data-wow-offset="10" data-wow-duration="1.5s" id="subscribe" role="form">
+						<h4 class="subscription-success"><i class="icon_check"></i> ありがとうございます！配信準備ができたらお知らせします。</h4>
+						<h4 class="subscription-error">入力いただいた項目に間違いがあるようです。お手数ですが、確認の上再度送信ボタンを教えてください。</h4>
+						<input type="email" name="email" id="subscriber-email" placeholder="Your Email" class="form-control input-box">
+						<button type="submit" id="subscribe-button" class="btn btn-default standard-button">送信</button>
+					</form>
+					<!-- / LOCAL TXT SAVING FORM END -->
+
+				</div>
+        <!-- END OF SUBSCRIPTION FORM WITH TITLE -->
+				
+			</div> 
+			<!-- END COLUMN -->
+			
+		</div> 
+		<!-- END ROW -->
+		
+	</div>
+	<!-- /END CONTAINER -->
+</div>
+<!-- /END COLOR OVERLAY -->
+
+</section>
+<!-- /END DOWNLOAD SECTION -->
+
+
+<!-- =========================
+     FOOTER 
+============================== -->
+<footer>
+
+<div class="container">
+	<div class="contact-box wow rotateIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+	</div>
+	<!-- /END CONTACT BOX -->
+	<!-- LOGO -->
+	<img style="width:160px;" src="https://dl.dropboxusercontent.com/u/20967079/mopie_logo.png" alt="LOGO" class="responsive-img">
+	<!-- SOCIAL ICONS -->
+	<ul class="social-icons">
+		<li><a href=""><i class="social_facebook_square"></i></a></li>
+		<li><a href=""><i class="social_twitter_square"></i></a></li>
+	</ul>
+
+</div>
+<!-- /END CONTAINER -->
+ 
+</footer>
+<!-- /END FOOTER -->
+
+
+<!-- =========================
+     SCRIPTS 
+============================== -->
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/jquery.localScroll.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/simple-expand.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/matchMedia.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
