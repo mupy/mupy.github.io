@@ -188,7 +188,7 @@ $("#subscribe").submit(function (e) {
     if (isValidEmail(email)) {
         $.ajax({
             dataType: 'jsonp',
-            url: "https://getsimpleform.com/messages/ajax?form_api_token=a821fe21020bd9d1738e11b6b759106a",
+            url: "http://getsimpleform.com/messages/ajax?form_api_token=a821fe21020bd9d1738e11b6b759106a",
             data: {
               email: email,
               wannaVisit: wannaVisit
